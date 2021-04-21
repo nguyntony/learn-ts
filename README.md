@@ -20,13 +20,21 @@ Interfaces are used to define the structure of an object.
 
 ## Type Annotation & Type Inference 
 ### Annotation 
-What the developers tell TS
+This is when the developer will explicitly assign the type of the value. It is great to do this as much as possible to ensure the security of your code, however there are some cases where you can leave TS to do the job for you.
 
 ### Inference 
-TS will try to determine the type
+There are several cases where we can rely on TS to infer the type of the value and not have to explicitly assign the type ourselves
 
 ## When to use annotations
 - functions that return the ‘any’ type
 - declare a variable on one line and initialize it later
 
-## Function annotations
+## Type Arrays
+### Why does it matter?
+- TS can do type inference when extracting values out of the arr
+- TS can help prevent from adding in incompatible types into the arr’
+- we get a lot of help with builtin fn such as map, forEach, reduce
+- you can put different types of elements into an arr
+
+### When to use typed arrays?
+- any time we need to represent a collection of records with some arbitrary sort order
