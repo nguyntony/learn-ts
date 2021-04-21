@@ -15,9 +15,6 @@ You are essentially still writing JS and the knowledge that you have about it st
 2. Feed our TS code to a TS compiler which is a command line tool
 3. The compiler will spit out plain JS and this is what we are giving to the browser. 
 
-## Interfaces
-Interfaces are used to define the structure of an object. 
-
 ## Type Annotation & Type Inference 
 ### Annotation 
 This is when the developer will explicitly assign the type of the value. It is great to do this as much as possible to ensure the security of your code, however there are some cases where you can leave TS to do the job for you.
@@ -38,3 +35,14 @@ There are several cases where we can rely on TS to infer the type of the value a
 
 ### When to use typed arrays?
 - any time we need to represent a collection of records with some arbitrary sort order
+
+## Tuples
+Array-like structure where each element represents some property of a record
+
+### When to use tuples? 
+- when you’re working with a csv file
+
+## Interfaces
+Creates a new type, describing the property names and values types of an object.
+- create Fns that accept arguments that are typed with interfaces
+- objects/classes can decide to ‘implement’ a given interface to work with a fn
